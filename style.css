@@ -1,0 +1,149 @@
+:root {
+  --gold: #c9a24d;
+  --brown: #3b2a1f;
+  --cream: #f7f2eb;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Inter', sans-serif;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  background:
+    linear-gradient(
+      rgba(247, 242, 235, 0.85),
+      rgba(247, 242, 235, 0.85)
+    ),
+    url("assets/bg.jpeg") center/cover no-repeat;
+
+  color: #3b2a1f;
+  background-attachment: scroll;
+}
+
+.container {
+  background: rgba(247, 242, 235, 0.75);
+  border-radius: 16px;
+  padding: 2.2rem 1.5rem;
+  max-width: 420px;
+  width: 92%;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+  text-align: center;
+}
+
+.logo {
+  width: 120px;
+  margin-bottom: 1.2rem;
+}
+
+h1 {
+  font-family: 'Playfair Display', serif;
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.description {
+  font-size: 0.95rem;
+  line-height: 1.6;
+  margin-bottom: 1.5rem;
+}
+
+.launch-badge {
+  display: inline-block;
+  border: 1px solid var(--gold);
+  color: var(--gold);
+  padding: 0.4rem 1rem;
+  border-radius: 20px;
+  font-size: 0.8rem;
+  margin-bottom: 1.8rem;
+}
+
+.signup {
+  display: flex;
+  gap: 0.5rem;
+  margin-bottom: 2rem;
+}
+
+.signup input {
+  flex: 1;
+  padding: 0.7rem;
+  border-radius: 6px;
+  border: 1px solid #ddd;
+}
+
+.signup input:focus {
+  outline: none;
+  border-color: var(--gold);
+}
+
+.signup button {
+  background: var(--gold);
+  border: none;
+  color: white;
+  padding: 0 1rem;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: 500;
+}
+
+.signup button:hover {
+  opacity: 0.9;
+}
+
+.socials a {
+  color: var(--brown);
+  margin: 0 0.5rem;
+  font-size: 1.1rem;
+}
+
+.socials a:hover {
+  color: var(--gold);
+}
+
+/* Mobile polish */
+@media (max-width: 768px) {
+  h1 {
+    font-size: 1.7rem;
+  }
+}
+
+@media (max-height: 700px) {
+  body {
+    align-items: flex-start;
+    padding-top: 2rem;
+    background-position: center top;
+  }
+}
+
+@media (max-width: 600px) {
+  .signup {
+    flex-direction: column;
+  }
+
+  .signup button {
+    padding: 0.7rem;
+  }
+}
+
+@media (max-width: 480px) {
+  h1 {
+    font-size: 1.6rem;
+  }
+
+  .description {
+    font-size: 0.9rem;
+  }
+
+  .logo {
+    width: 100px;
+  }
+}
+
+
